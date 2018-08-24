@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <race name="human">
-    <ability name="Hit" level="1">This is hitting someone</ability>
+    <ability name="Hit" level="1">This is hitting someone
+hier absatz</ability>
     <ability name="MultipleStrikes" level="1" choice="true">
         <variant name="1">strike 1</variant>
         <variant name="2">strike 2</variant>

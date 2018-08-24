@@ -27,7 +27,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // 1. Scan Profile File welche klasse/Rasse erstellt wurde
+        // 2. erstelle für jeden gefundenen charakter einen Listeneintrag
+        // 3. (Beim klick auf den Listeneintrag)
+        //    erstelle eine Liste mit jeder Fähigkeit als Listeneintrag TODO What about kleine Attributs Erhöhungen ? Auch ein Listeneintrag für jede ?
+        // 4. Bei Multiple Choice Fähigkeiten muss es in der Profile-file noch ein Zusatz attribut geben.
+        //    Falls dieses nicht gesetzt ist muss eine Auswahl statt finden Hinweis im Listeneintrag und bei draufklicken gibts ein AuswahlFenster.
+        // 5. Jeder Listeneintrag ist farblich markiert (rot = schaden, grün = heilung, blau = support, orange = debuff, grau = sonstiges)
+        //    Jeder Listeneintrag Zeigt Name, Stufe, sehr knappe beschreibung an. (+ bild ?)
+        // 6. Beim Klicken auf ein Listeneintrag wird die Kurzbeschreibung und die volle Beschreibung darunter angezeigt.
+        // 7. Todo Character bearbeiten ? bzw. die komplette Character erstellung
 
+
+
+        // TESTINGS
         // TODO in onCreate schlechte idee Tutorial: https://www.tutorialspoint.com/java_xml/java_dom_parse_document.htm
         try {
             parseXML(getResources().openRawResource(R.raw.human));

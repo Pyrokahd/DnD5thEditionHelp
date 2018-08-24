@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<traits>
+    <trait variant="true">
+        <name>Ability Score Increase</name>
+        <infoShort>each ability score +1</infoShort>
+        <infolong>Your ability scores each increase by 1</infolong>
+        <variantInfoShort>If you use traits you instead get:
+            2 different ability scores +1,
+            proficiency in one skill you choose,
+            1 feat of your choice</variantInfoShort>
+        <variantInfoLong>If your campaign uses the optional feat rules from chapter 5, your Dungeon Master might allow these variant traits, all of which replace the humans Ability Score Increase trait:
+            Ability Score Increase. Two different ability scores of your choice increase by 1.
+            Skills. You gain proficiency in one skill of your choice.
+            Feat. You gain one feat of your choice.</variantInfoLong>
+    </trait>
+    <mctrait>
+
+    </mctrait>
+</traits>
