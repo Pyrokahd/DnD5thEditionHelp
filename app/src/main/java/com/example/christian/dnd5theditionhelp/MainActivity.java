@@ -1,7 +1,9 @@
 package com.example.christian.dnd5theditionhelp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -48,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
         catch (Exception e){
             System.out.println("ERROR: "+e);
         }
+    }
+
+    public void changeToCharacterCreation(View view){
+        Intent intent = new Intent(this,CharacterCreation.class);
+        startActivity(intent);
     }
 
     private void parseXML(InputStream input) throws Exception {

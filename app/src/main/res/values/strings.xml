@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">DnD5thEditionHelp</string>
+    <string name="nameTextView">Name:</string>
+    <string name="spinnerTextView">Race:</string>
+    <string-array name="races_array">
+        <item>Human</item>
+        <item>Hill Dwarf</item>
+        <item>Mountain Dwarf</item>
+        <item>High Elf</item>
+        <item>Wood Elf</item>
+        <item>Dark Elf (Drow)</item>
+        <item>Lightfoot Halfling</item>
+        <item>Stout Halfling</item>
+        <item>Dragonborn</item>
+        <item>Forest Gnome</item>
+        <item>Rock Gnome</item>
+        <item>Half Elf</item>
+        <item>Half Orc</item>
+        <item>Tiefling</item>
+    </string-array>
 </resources>
