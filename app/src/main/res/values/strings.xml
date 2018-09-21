@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">DnD5thEditionHelp</string>
     <string name="nameTextView">Name:</string>
-    <string name="spinnerTextView">Race:</string>
+    <string name="RaceSpinnerTextView">Race:</string>
+    <string name="ClassSpinnerTextView">Class:</string>
+    <string name="createBtn">Create</string>
     <string-array name="races_array">
         <item>Human</item>
         <item>Hill Dwarf</item>
@@ -17,5 +19,19 @@
         <item>Half Elf</item>
         <item>Half Orc</item>
         <item>Tiefling</item>
+    </string-array>
+    <string-array name="classes_array">
+        <item>Barbarian</item>
+        <item>Bard</item>
+        <item>Cleric</item>
+        <item>Druid</item>
+        <item>Fighter</item>
+        <item>Monk</item>
+        <item>Paladin</item>
+        <item>Ranger</item>
+        <item>Rogue</item>
+        <item>Sorcerer</item>
+        <item>Warlock</item>
+        <item>Wizard</item>
     </string-array>
 </resources>

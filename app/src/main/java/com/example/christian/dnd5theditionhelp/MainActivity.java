@@ -44,12 +44,12 @@ public class MainActivity extends AppCompatActivity {
 
         // TESTINGS
         // TODO in onCreate schlechte idee Tutorial: https://www.tutorialspoint.com/java_xml/java_dom_parse_document.htm
-        try {
+        /*try {
             parseXML(getResources().openRawResource(R.raw.human));
         }
         catch (Exception e){
             System.out.println("ERROR: "+e);
-        }
+        }*/
     }
 
     public void changeToCharacterCreation(View view){
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //System.out.println("####? "+e.getAttribute("choice"));
                 if (e.getAttribute("choice").equals("true")) {
-                    //LEERZEICHEN IM XML WERDEN MIRGEPARST
+                    //LEERZEICHEN IM XML WERDEN MITGEPARST
                     for(int i = 0; i < e.getElementsByTagName("variant").getLength();i++){
                         String s = e.getElementsByTagName("variant").item(i).getTextContent();
                         sb.append(s+"\n");
@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
         System.out.println(sb.toString());
+        input.close();
     }
 
     private void parseXML(){
@@ -106,12 +107,14 @@ public class MainActivity extends AppCompatActivity {
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES,false);
             parser.setInput(is,null);
             processParsing(parser);
+            is.close();
 
         } catch (XmlPullParserException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
     private void processParsing(XmlPullParser parser) throws XmlPullParserException, IOException {
@@ -134,5 +137,6 @@ public class MainActivity extends AppCompatActivity {
             eventType = parser.next();
         }
         System.out.println(sb.toString());
+
     }
 }
